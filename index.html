@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>
+          Javascript Crud Operations
+        </title>
+        <link type="text/css" rel="stylesheet" href="style.css">
+   </head>
+   <body>
+    <table class="table">
+        <tr>
+            <td>
+                <form autocomplete="off" onsubmit="onFormSubmit()">
+                    <div>
+                        <label for="productCode" >Product Code</label>
+                        <input type="text"  name="prodcutCode" id="productCode">
+                    </div>
+                    <div>
+                        <label for="productName" >product Name</label>
+                        <input type="text"  name="productName" id="productName">
+                    </div>
+                    <div>
+                        <label for="Qty" >Qty</label><br>
+                        <input type="number"  name="Qty" id="qty">
+                    </div>
+                    <div>
+                        <label for="perPrice" >Price</label><br>
+                        <input type="number"  name="perPrice" id="perPrice">
+                    </div>
+                    <div class="form_action--button">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </div>
+                </form>
+            </td>
+                <td>
+                    <table class="list" id="storeList">
+                        <thead>
+                            <tr>
+                                <th>Product Code</th>
+                                <th>Product Name</th>
+                                <th>Qty</th>
+                                <th>Price</th>
+                                <th>Update</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </td>
+           
+        </tr>
+    </table>
+    <script type="text/javascript" src="./crud.js"></script>
+   </body>
+</html>
